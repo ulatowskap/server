@@ -52,7 +52,7 @@ io.on("connect", socket => {
     if (user) {
       io.to(user.room).emit("message", {
         user: "Admin",
-        text: `${user.name} życzy miłego dnia i wychodzi z czatu`
+        text: `${user.name} życzy bardzo miłego dnia i wychodzi z czatu`
       });
       io.to(user.room).emit("roomData", {
         room: user.room,
